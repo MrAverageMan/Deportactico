@@ -3,7 +3,6 @@ import { TitleComponent, ParagrafComponent} from '../../components/NewPostSteps'
 import { ContainerBody } from './styled';
 
 const NewPost = () => {
-  const  state  = useAppContext();
   return ( 
     <ContainerBody>
         <TitleComponent />
