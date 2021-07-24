@@ -10,26 +10,8 @@ const Navbar = () => {
                 </a>
             </h1>
             <ul>
-                <li>
-                    <a href="/team">
-                        <img src="./assets/magnifying-glass.svg" alt="Search Icon" />
-                    </a>
-                </li>
-                <li>
-                    <a href="/team">
-                        <img src="./assets/notification.png" alt="Notification Icon" />
-                    </a>
-                </li>
-                <li className="roundedSector">
-                    <a href="/new-post">
-                        Upload
-                    </a>
-                </li>
-                <li className="profleSection">
-                    <a href="/team">
-                        <img src="./assets/profile.jpg" alt="Profile" /> 
-                    </a>
-                </li>
+                <li><a href="./about">Nosotros</a></li>
+                <li><a href="./contact">Contacto</a></li>
             </ul>
         </Container>
     )

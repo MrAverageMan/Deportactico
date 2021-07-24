@@ -17,7 +17,7 @@ function ParagrafComponent (){
 
 const showOptions = (value) =>{
     setTextValue(value);
-    console.log(textValue);
+    //console.log(textValue);
 }
   
     return (

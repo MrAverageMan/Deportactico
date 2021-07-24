@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container,
-    PosContainer
+    PosContainer,
+    Hero
  } from './styled'
  import { Articles } from '../../components';
 
@@ -24,7 +25,6 @@ const Main = () => {
         if (errors) {
           console.error(errors);
         }
-
         // rerender the entire component with new data
         //setPage(data.articleCollection.items);
         setArticles(data.articleCollection.items);
@@ -34,20 +34,22 @@ const Main = () => {
   if (!articles) {
     return "Loading...";
   }
-  //console.log(articles);
 
     return (
         <Container>
           {!articles ? ( 
+            <>
               <p>Empeza a atrabajar</p>
+              <p>je</p>
+              </>
              ):(
                <>
+               <Hero />
                {articles.map((article, i) => 
                 <Articles data={article}/>
               )}
                </>
              )}
-              
         </Container>
     )
 }
@@ -59,10 +61,26 @@ const query = `
 {
   articleCollection{
     items{
+      sys {
+        id
+      }
       title
       slug
       description
       content
+      
+      videoCollection{
+        items {
+          title
+          description
+          contentType
+          fileName
+          size
+          url
+          width
+          height
+        }
+      }
     }
   }
 }
