@@ -3,7 +3,7 @@ import {Container,
   Article} from './styled';
 
 const Articles = ({data}) => {
-    console.log(data);
+    //console.log(data.videoCollection.items.url);
     return(
             <Container>
                 {!data ? ( 
@@ -11,13 +11,17 @@ const Articles = ({data}) => {
              ):(
                <Article>
                  <div className="img-container">
-                  <img src={data.url}/>
+                 {data.videoCollection.items.title == "Portada" ? ( 
+                  <img src="/article-default-portada"/>
+                 ):(
+                  <img src="./assets/article-default-portada.jpeg"/>
+                 )}
                  </div>
                  <div>
                    <h1>{data.title}</h1> 
                    <p>{data.description}</p> 
                  </div>
-                 <a href={`/article/${data.sys.id}`}>Read</a>
+                 <a href={`/article/${data.sys.id}`}>Seguir leyendo</a>
                </Article>
              )}
             </Container>
@@ -36,6 +40,7 @@ const query = `
       slug
       description
       content
+
       videoCollection{
         items {
           title
@@ -47,6 +52,22 @@ const query = `
           width
           height
         }
+      }
+    }
+  }
+  
+  assetCollection {
+    items {
+      title
+      description
+      contentType
+      fileName
+      size
+      url
+      width
+      height
+      sys {
+        id
       }
     }
   }

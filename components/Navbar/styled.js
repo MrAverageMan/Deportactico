@@ -9,6 +9,7 @@ export const Container = styled.nav`
     margin:0 auto;
     padding:0;
     background-color: #FFF;
+    padding: 0 2rem;
     h1{
         width: 100%;
         a{
@@ -20,13 +21,13 @@ export const Container = styled.nav`
     ul{
         display:flex;
         list-style:none;
-        padding-right:5%;
-        width: 30%;
+        width: fit-content;
         align-items: center;
         justify-content: center;
         li{
         list-style:none;
-        width: 50%;
+        width: fit-content;
+        padding: 0 2rem 0 0;
             a{
                 color:#000;
                 width: 100%;

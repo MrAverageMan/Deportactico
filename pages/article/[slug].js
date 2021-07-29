@@ -15,7 +15,6 @@ import { Layout } from '../../containers';
   if (!articles) {
     return "Loading...";
   }
-  //var imageURL = 'https:';
   useEffect(() => {
     client.getEntry({slug})
     .then(function (entry) {
@@ -23,11 +22,12 @@ import { Layout } from '../../containers';
       setArticles(entry.fields);
     });
   }, []);
+  //console.log(articles); 
   return (
     <>
       <Head>
-        <title>New post</title>
-        <meta name="description" content="Sports blog platform" />
+        <title>Deportactico</title>
+        <meta name="description" content="Deportactico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
@@ -56,7 +56,6 @@ const query = `
       slug
       description
       content
-      
       videoCollection{
         items {
           title
@@ -68,6 +67,21 @@ const query = `
           width
           height
         }
+      }
+    }
+  }
+  assetCollection {
+    items {
+      title
+      description
+      contentType
+      fileName
+      size
+      url
+      width
+      height
+      sys {
+        id
       }
     }
   }
