@@ -18,7 +18,6 @@ background-color: red;
 `
 
 export const Hero = styled.div`
-background-color: red;
 grid-column-start: 1;
 grid-column-end: five;
 grid-row-start: row1-start;
@@ -26,4 +25,7 @@ grid-row-end: 1;
 height: 90%;
 padding: 2rem;
 margin-bottom: 2rem;
+background: url("/Assets/Hero-d.png"); 
+background-repeat: no-repeat;
+background-size: cover;
 `

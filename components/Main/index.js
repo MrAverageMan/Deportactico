@@ -34,8 +34,7 @@ const Main = () => {
   if (!articles) {
     return "Loading...";
   }
-  //console.log(articles);
-
+//console.log(articles);
     return (
         <Container>
           {!articles ? ( 
@@ -82,7 +81,9 @@ const query = `
           height
         }
       }
+      
     }
+    
   }
 }
 `
