@@ -12,6 +12,7 @@ export const Container = styled.nav`
     padding: 0 2rem;
     h1{
         width: 100%;
+        font-family: 'Roboto', sans-serif;
         a{
         width: 100%;
         display:flex;

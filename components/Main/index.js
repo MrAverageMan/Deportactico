@@ -28,13 +28,14 @@ const Main = () => {
         // rerender the entire component with new data
         //setPage(data.articleCollection.items);
         setArticles(data.articleCollection.items);
+        console.log(data.articleCollection.items[0]);
       });
   }, []);
 
   if (!articles) {
     return "Loading...";
   }
-//console.log(articles);
+//console.log(articles[0].videoCollection.items[1].contentfulMetadata);
     return (
         <Container>
           {!articles ? ( 
