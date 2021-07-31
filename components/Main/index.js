@@ -35,8 +35,7 @@ const Main = () => {
   if (!articles) {
     return "Loading...";
   }
- development
-   main
+//console.log(articles[0].videoCollection.items[1].contentfulMetadata);
     return (
         <Container>
           {!articles ? ( 
