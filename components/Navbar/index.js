@@ -5,8 +5,8 @@ const Navbar = () => {
     return(
         <Container>
             <h1>
-                <a href="./">
-                <img src="#" alt="Logo" />
+                <a href="/">
+                DEPORTACTICO
                 </a>
             </h1>
             <ul>
