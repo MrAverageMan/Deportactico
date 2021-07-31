@@ -5,3 +5,7 @@ export { default as Articles } from './Articles';
 export {default as NavbarUser} from './NavbarUser'
 export {default as Post} from './Post'
 export {default as StatsTable} from './StatsTable'
+ development
+
+export {default as StatsTable} from './StatsTable'
+ main
