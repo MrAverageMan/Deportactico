@@ -14,7 +14,7 @@ const Articles = ({data}) => {
                  {data.videoCollection.items.title == "Portada" ? ( 
                   <img src="/article-default-portada"/>
                  ):(
-                  <img src="./assets/article-default-portada.jpeg"/>
+                  <img src="./Assets/article-default-portada.jpeg"/>
                  )}
                  </div>
                  <div>
