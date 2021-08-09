@@ -8,4 +8,12 @@ export const Container = styled.div`
     padding-top: 2rem;
     overflow:scroll;
     text-align: center;
-`
+    .content{
+    padding: 0 2rem;
+    color: red;
+    }
+`  
+export const Content = styled.p`
+    padding: 0 2rem;
+    text-align: left;
+`  
